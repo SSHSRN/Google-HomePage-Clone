@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>elgooG</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" type="image/jpg" href="https://cdn-icons-png.flaticon.com/512/2702/2702602.png"/>
+    </head>
+    <body>
+        <div class="header_parent">
+            <div class="header">
+                <div class="gmail_div">
+                    <a class="gmail" href="https://mail.google.com">Gmail</a>
+                </div>
+                <div class="images_div">
+                    <a class="images" href="https://www.google.co.in/imghp">Images</a>
+                </div>
+                <div class="acc">
+                    <a href="https://myaccount.google.com/"><img class="user_acc" src="https://cdn-icons.flaticon.com/png/512/552/premium/552848.png?token=exp=1644230566~hmac=07139a9a3255d92d6053e5bd54ca9b87" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="img_div">
+            <div class="something">
+            </div>
+            <center><img class="google_img" src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt=""></center>
+        </div>
+        <div class="search_div">
+            <div class="search_bar">
+                    <img class="search_img" src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="search_image">
+                    <input class="search_txt" id="search_txt" type="text">
+            </div>
+        </div>
+        <div class="div_below_searchbar">
+            <button class="btn" onclick="gSearch()">Google Search</button>
+            <button class="btn" onclick="load('https://www.google.com/doodles')">I'm Feeling Lucky</button>
+            <div class="other_languages">
+                Google offered in: 
+                <a class="other_langs" href="https://www.google.co.in/?hl=hi">हिन्दी</a>
+                <a class="other_langs" href="https://www.google.co.in/?hl=ta">தமிழ்</a>
+                <a class="other_langs" href="https://www.google.co.in/?hl=mr">मराठी</a>
+                <a class="other_langs" href="https://www.google.co.in/?hl=ml">മലയാളം</a>
+                <a class="other_langs" href="https://www.google.co.in/?hl=te">తెలుగు</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <a class="footr first_footr" href="https://about.google/">About</a>
+            <a class="footr" href="https://about.google/">About</a>
+            <a class="footr" href="https://ads.google.com/intl/en_in/home/">Advertising</a>
+            <a class="footr" href="https://www.google.com/business/">Business</a>
+            <a class="footr" href="https://about.google/">How Search works</a>
+            <a class="footr_right last_footr" href="https://policies.google.com/terms">Terms</a>
+            <a class="footr_right" href="https://policies.google.com/privacy">Privacy</a>
+        </footer>
+    </body>
+    <script>
+        function load(s) {
+            window.location.assign(s);
+        }
+
+        function getSearchVal(){
+            let s_txt = document.getElementById("search_txt").value;
+            console.log(search_txt);
+            return s_txt;
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                gSearch();
+            }
+        });
+
+        function gSearch() {
+            let s = getSearchVal();
+            window.location.assign('https://www.google.co.in/search?q='+s);
+        }
+    </script>
+</html>

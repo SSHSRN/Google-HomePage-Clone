@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*To make color of link unchanged after clicking*/
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    border: 1px solid #e7eaf1;
+    border-radius: 4px;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    /* user-select: none; */
+}
+
+.btn:hover{
+    border: 2px solid rgb(214, 211, 211);
+}
+
+.header_parent{
+    height: 50px;
+}
+
+.header{
+    display: flex;
+    box-sizing: border-box;
+    float: right;
+}
+
+.gmail_div,.images_div{
+    font-size: 17px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.images{
+    margin-right: 35px;
+}
+
+.user_acc{
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.img_div{
+    height: 290px;
+}
+
+.something{
+    height: 70%;
+}
+
+.google_img{
+    margin: auto;
+    display: block;
+}
+
+.search_div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_bar{
+    border: 2px solid rgb(228, 222, 222);
+    border-radius: 50px;
+    /* width: 70%; */
+    width: 30%;
+    height: 40px;
+    display: flex;
+}
+
+.search_bar:hover{
+    cursor: text;
+    background-color: rgb(236, 236, 236);
+}
+
+.search_img{
+    height: 20px;
+    margin: 10px 10px 0 10px;
+}
+
+.search_txt{
+    /* margin-left: 40px;
+    margin-top: 50px; */
+    background-color: transparent;
+    border: none;
+    /* margin: 0; */
+    margin-right: 15px;
+    padding: 0;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    /* -webkit-tap-highlight-color: transparent; */
+    /* margin-top: -37px; */
+    /* height: 34px; */
+    font-size: 16px;
+}
+
+.div_below_searchbar{
+    display: block;
+    text-align: -webkit-center;
+    margin-top: 20px;
+}
+
+.other_languages{
+    margin-top: 10px;
+}
+
+.other_langs{
+    margin-right: 10px;
+}
+
+
+.footer {
+    position: fixed;
+    height: 46px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(229, 226, 226);
+    color: black;
+    text-align: center;
+}
+
+.footr{
+    float: left;
+    padding: 15px;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+
+.first_footr{
+    margin-left: 20px;
+}
+
+.footr_right{
+    float: right;
+    padding: 15px;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+
+.last_footr{
+    margin-right: 20px;
+}
